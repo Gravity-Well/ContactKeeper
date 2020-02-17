@@ -30,4 +30,4 @@ router.delete('/:id',(req,res)=>{
     res.send('Update contacts');
 });
 
-module.export=router;
+module.exports=router;
