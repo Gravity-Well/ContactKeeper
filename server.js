@@ -1,5 +1,28 @@
+
+// Included the following packages
+// npm int-y
+// modifed package.json "main"
+// npm install 
+// express
+// bcrypt (for passwords)
+// jsonwebtoken
+// config for Global variables
+// express-validator
+// mongoose
+
+// dev dependencies
+// npm i -D nodemon concurrently (run back and from-end React server at the same time)
+
 const express=require('express');
 const app=express();
+const connectDB=require('./config/db');
+
+// Connect to the db
+connectDB();
+
+// Init middleware built in. Don't need to install bodyparser anymore
+app.use(express.json({extended:false}));
+
 
 app.get('/',(req,res)=>{
     res.json({msg:'Welcome to the ContactKeeper API...'})
