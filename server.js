@@ -1,8 +1,8 @@
 
 // Included the following packages
-// npm int-y
+// npm init -y
 // modifed package.json "main"
-// npm install 
+// npm install the following 
 // express
 // bcrypt (for passwords)
 // jsonwebtoken
@@ -41,5 +41,5 @@ app.listen(PORT, ()=>{
 });
 
 
-// use npm run server. This uses the server script in package.json
+// use "npm run server". This uses the server script in package.json
 // in the terminal to start the web server
